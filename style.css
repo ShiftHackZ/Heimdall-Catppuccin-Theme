@@ -134,9 +134,22 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
   /* Hiding configuration buttons on smaller screens */
   #config-buttons {
     display: none;
+  }
+
+  /* Item hover off on smaller screens */
+  .item:hover {
+    transform: none;
+    background-color: #3d3846 !important;
+    box-shadow: none !important;
+  }
+
+  /* Tooltip off on smaller screens */
+  .tooltip {
+    display: none !important;
   }
 }
 
