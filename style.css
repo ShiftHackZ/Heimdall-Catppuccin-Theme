@@ -209,12 +209,14 @@
 
 /* Light mode styles for details title and search form input */
 .light-mode #app .details > .title,
+.light-mode #app .item .link,
 .light-mode #app .searchform input {
   color: black !important;
 }
 
 /* Dark mode styles for details title and light mode styles for search form input */
 .dark-mode #app .details > .title,
+.dark-mode #app .item .link,
 .light-mode #app .searchform input {
   color: #f6f5f4 !important;
 }
