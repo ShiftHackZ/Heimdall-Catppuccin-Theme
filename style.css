@@ -48,10 +48,6 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
-.searchform button {
-  width: auto;
-}
-
 .searchform select {
   border-right: 1px !important;
 }
