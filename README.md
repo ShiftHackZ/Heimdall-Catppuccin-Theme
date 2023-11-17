@@ -9,16 +9,16 @@
 	Dark mode
 </h4>
 <div align="center">
-    <img src="./previews/preview-dark-mode.png" style="max-height: 600px; width: auto;" alt="preview dark mode"/>
-    <img src="./previews/preview-dark-mode-mobile.jpg" style="max-height: 600px; width: auto;" alt="preview dark mode mobile"/>
+    <img src="./previews/preview-dark-mode.png" style="max-height: 100%; width: auto;" alt="preview dark mode"/>
+    <img src="./previews/preview-dark-mode-mobile.jpg" style="max-width: 50%; height: auto;" alt="preview dark mode mobile"/>
 </div>
 
 <h4 align="center">
 	Light mode
 </h4>
 <div align="center">
-    <img src="./previews/preview-light-mode.png" style="max-height: 600px; width: auto;" alt="preview light mode"/>
-    <img src="./previews/preview-light-mode-mobile.jpg" style="max-height: 600px; width: auto;" alt="preview light mode mobile"/>
+    <img src="./previews/preview-light-mode.png" style="max-height: 100%; width: auto;" alt="preview light mode"/>
+    <img src="./previews/preview-light-mode-mobile.jpg" style="max-width: 50%; height: auto;" alt="preview light mode mobile"/>
 </div>
 
 # Heimdall Catppuccin Theme
