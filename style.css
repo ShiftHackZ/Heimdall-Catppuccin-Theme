@@ -1,95 +1,62 @@
-/* Importing the Raleway font with weights 700 and 800 from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap");
 
-/* Styling for the main app container */
 #app {
   background-position: center !important;
 }
 
-/* Styling for the sortable container and the main content area */
 #app #sortable,
 #app main {
   padding: 20px;
 }
 
-/* Styling for the configuration buttons */
 #config-buttons {
   bottom: 50%;
   transform: translateY(50%);
-  /* Adding border-radius and box-shadow for a styled appearance */
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: rgba(255, 255, 255, 0.1) -1px 1px 1px 0,
     rgba(255, 255, 255, 0.1) 0 -1px 1px 0, rgba(0, 0, 0, 0.1) -1px 0 20px 5px;
-  background-color: #3d3846;
-  /* Adding blur effect to the background */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* Styling for links inside the configuration buttons */
 #config-buttons a {
   background: none;
 }
 
-/* Styling for SVG icons inside configuration buttons */
 #config-buttons a svg {
   transition: all 0.1s ease-in-out;
 }
 
-/* Adding hover effect for SVG icons inside configuration buttons */
 #config-buttons a:hover svg {
   transform: scale(1.1);
 }
 
-/* Styling for tooltips */
 .tooltip {
   bottom: unset !important;
 }
 
-/* Styling for the search form */
 .searchform {
-  /* Adding box-shadow for a subtle shadow effect */
   box-shadow: rgba(0, 0, 0, 0.05) -1px -1px 5px 0,
     rgba(0, 0, 0, 0.15) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
-  /* Adding border-radius and background color to the search form */
   border-radius: 12px;
   background-image: none;
   border: none;
   outline: none;
-  background-color: #3d3846 !important;
-  /* Adding blur effect to the background */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* Styling for the search form button */
 .searchform button {
-  background: #241f31 !important;
-  color: #f6f5f4 !important;
+  width: auto;
 }
 
-/* Styling for the search form input */
-.searchform input {
-  background: #3d3846;
-  color: #f6f5f4;
-}
-
-/* Styling for the search form select dropdown */
 .searchform select {
-  background: #241f31 !important;
-  border-right: 1px solid #3d3846 !important;
-  color: #f6f5f4 !important;
+  border-right: 1px !important;
 }
 
-/* Styling for items in the app */
 .item {
-  /* Adding box-shadow for a subtle shadow effect */
-  box-shadow: rgba(0, 0, 0, 0.05) -1px -1px 5px 0,
-    rgba(0, 0, 0, 0.15) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
-  /* Adding border-radius, margin, padding, and transition effects */
   border-radius: 12px;
   background-image: none;
   border: none;
@@ -100,76 +67,38 @@
   padding: 1rem 55px 1rem 1rem;
   transition: all 0.25s ease-in-out;
   transition-property: transform, box-shadow, background-color;
-  background-color: #3d3846 !important;
-  /* Adding blur effect to the background */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* Styling for the after pseudo-element of items */
 .item:after {
   height: 100px;
   opacity: 0.2;
 }
 
-/* Hover effect for items */
 .item:hover {
   transform: scale(1.1);
-  background-color: rgba(69, 71, 90, 0.8) !important;
-  /* Adding box-shadow for a subtle shadow effect on hover */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 60px 40px -7px !important;
 }
 
-/* Styling for icons inside items */
 .item .svg-inline--fa {
   height: 100px;
   vertical-align: middle;
   opacity: 0.2;
 }
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 750px) {
-  /* Adjusting padding for items */
-  .item {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  /* Hiding configuration buttons on smaller screens */
-  #config-buttons {
-    display: none;
-  }
-
-  /* Item hover off on smaller screens */
-  .item:hover {
-    transform: none;
-    background-color: #3d3846 !important;
-    box-shadow: none !important;
-  }
-
-  /* Tooltip off on smaller screens */
-  .tooltip {
-    display: none !important;
-  }
-}
-
-/* Styling for details section */
 .details {
   padding: 0 0.5rem;
 }
 
-/* Styling for app icons */
 .app-icon {
-  /* Adding drop shadow effect to app icons */
   filter: drop-shadow(1px 1px 2px rgba(10, 0, 20, 0.1));
 }
 
-/* Styling for live stats container */
 .livestats-container {
   margin-top: 0.5rem;
 }
 
-/* Styling for live stats titles and list items */
 .livestats-container .livestats .title {
   margin-bottom: 3px;
 }
@@ -178,45 +107,93 @@
   padding-right: 1rem;
 }
 
-/* Styling for strong elements in live stats */
 .livestats-container strong {
   font-weight: 500 !important;
   padding: 0 2px;
 }
 
-/* Styling for details title */
 .details > .title {
-  font-weight: 300;
-  font-size: 1rem !important;
+  font-weight: 350;
+  font-size: 1rem;
   letter-spacing: 1px;
   font-family: Arial, Helvetica, sans-serif;
   transition: all 0.25s ease-in-out;
 }
 
-/* Light mode styles */
+/* Media query for smaller screens */
+@media only screen and (max-width: 750px) {
+  #config-buttons,
+  .tooltip,
+  .searchform {
+    display: none !important;
+  }
+
+  .details > .title {
+    font-size: 0.9rem !important;
+  }
+
+  .item {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .item:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/***** dark and light mode *****/
+/*** background-color ***/
+/* dark mode */
+.dark-mode #app .item,
+.dark-mode #config-buttons,
+.dark-mode #app .searchform,
+.dark-mode #app .searchform input {
+  background-color: #3d3846 !important;
+}
+
+.dark-mode #app .searchform select,
+.dark-mode #app .searchform button {
+  background-color: #5e5c64 !important;
+}
+
+/* light mode */
 .light-mode #app .item,
-.light-mode #app .searchform {
-  background-color: #f6f5f4 !important;
+.light-mode #config-buttons,
+.light-mode #app .searchform,
+.light-mode #app .searchform input {
+  background-color: #deddda !important;
+}
+
+.light-mode #app .searchform select,
+.light-mode #app .searchform button {
+  background-color: #9a9996 !important;
+}
+
+/*** color ***/
+/* dark mode */
+.dark-mode #app .item > .link,
+.dark-mode #config-buttons a svg {
+  color: #deddda !important;
+}
+
+.dark-mode #app .searchform input,
+.dark-mode #app .searchform select,
+.dark-mode #app .searchform button,
+.dark-mode #app .details > .title {
+  color: white !important;
+}
+
+/* light mode */
+.light-mode #app .item > .link,
+.light-mode #config-buttons a svg {
   color: #3d3846 !important;
 }
 
-/* Dark mode styles */
-.dark-mode #app .item,
-.dark-mode #app .searchform {
-  background-color: #3d3846 !important;
-  color: #f6f5f4 !important;
-}
-
-/* Light mode styles for details title and search form input */
-.light-mode #app .details > .title,
-.light-mode #app .item .link,
-.light-mode #app .searchform input {
+.light-mode #app .searchform input,
+.light-mode #app .searchform select,
+.light-mode #app .searchform button,
+.light-mode #app .details > .title {
   color: black !important;
-}
-
-/* Dark mode styles for details title and light mode styles for search form input */
-.dark-mode #app .details > .title,
-.dark-mode #app .item .link,
-.light-mode #app .searchform input {
-  color: #f6f5f4 !important;
 }

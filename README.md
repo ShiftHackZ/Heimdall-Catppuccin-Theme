@@ -5,17 +5,27 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
-<p align="center">
-	<img src="./preview-dark-mode.png">
-</p>
+<h4 align="center">
+	Dark mode
+</h4>
+<div align="center">
+    <img src="./previews/preview-dark-mode.png" style="max-height: 600px; width: auto;" alt="preview dark mode"/>
+    <img src="./previews/preview-dark-mode-mobile.jpg" style="max-height: 600px; width: auto;" alt="preview dark mode mobile"/>
+</div>
 
-<p align="center">
-	<img src="./preview-light-mode.png">
-</p>
+<h4 align="center">
+	Light mode
+</h4>
+<div align="center">
+    <img src="./previews/preview-light-mode.png" style="max-height: 600px; width: auto;" alt="preview light mode"/>
+    <img src="./previews/preview-light-mode-mobile.jpg" style="max-height: 600px; width: auto;" alt="preview light mode mobile"/>
+</div>
 
 # Heimdall Catppuccin Theme
 
-A nice dark pastel Catppuccin theme for your Heimdall dashboard.
+A nice, pastel-colored Catppuccin theme for your Heimdall dashboard.
+
+> The search bar, navigation menu and tooltips are hidden on devices up to a certain size. The size of the bookmark is also not changed when you move the mouse pointer over it (which is not normally possible on a mobile device).
 
 ## Installation
 
